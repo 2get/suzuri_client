@@ -291,6 +291,10 @@ module Suzuri
       @client = client
     end
 
+    def list(body)
+      @client.product.list(body)
+    end
+
     # {"en"=>"create Material & Products by from image", "ja"=>"画像からMaterialとProductを作ります。**レートリミットが設けてあります。**"}
     #
     # @param body: the object to pass as the request payload
